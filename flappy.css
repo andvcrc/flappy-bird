@@ -55,14 +55,14 @@ body {
 .wall .border {
     height: 30px;
     width: 130px;
-    background-color: green;
+    background: linear-gradient(to left, rgb(0, 199, 0), rgb(69, 194, 69));
     border: 2px solid black;
 }
 
 .wall .body {
     height: 150px;
     width: 110px;
-    background-color: green;
+    background: linear-gradient(to left, rgb(0, 199, 0), rgb(69, 194, 69));
     border-left: 2px solid black;
     border-right: 2px solid black;
 }
