@@ -23,8 +23,8 @@ body {
 [flappy] {
     position: relative;
     border: 5px solid dodgerblue;
-    height: 700px;
-    width: 1200px;
+    height: 70vh;
+    width: 80vw;
     margin: 15px;
     background-color: deepskyblue;
     overflow: hidden;
