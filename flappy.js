@@ -75,7 +75,9 @@ function Passaro(alturaJogo) {
     this.setY = y => this.elemento.style.bottom = `${y}px`
 
     window.onkeydown = e => voando = true
+    window.ontouchstart = e => voando = true
     window.onkeyup = e => voando = false
+    window.ontouchend = e => voando = false
 
     this.animar = () => {
         const novoY = this.getY() + (voando ? 8 : -5)
@@ -93,17 +95,6 @@ function Passaro(alturaJogo) {
     this.setY(alturaJogo / 2)
 
 }
-
-// const barreiras = new Barreiras(700, 1200, 200, 400)
-// const areaDoJogo = document.querySelector('[flappy]')
-// const bird = new Passaro(700)
-// 
-// areaDoJogo.appendChild(bird.elemento)
-// barreiras.pares.forEach(par => areaDoJogo.appendChild(par.elemento))
-// setInterval(() => {
-//     barreiras.animar() 
-//     bird.animar()
-// }, 20)
 
 function Progresso() {
     this.elemento = novoElemento('span', 'progress')
